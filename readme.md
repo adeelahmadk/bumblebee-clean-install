@@ -1,4 +1,4 @@
-# Nvidia Bumblebee setup for Ubuntu 16.04 LTS and variants
+# Nvidia+Bumblebee setup for Ubuntu 16.04 LTS and variants
 
 Power ratings for graphics hardwares are increasing in correlation with processing capability. This factor limits the graphics processing cap on mobile devices. Advent of switchable graphics brought some interesting use cases to mobile computing platforms. For the first time in history, it gave laptop users a choice to configure their devices for a power optimized profile or a performance optimized profile. Graphics hardware manufacturers like Nvidia and AMD developed these profile customization possible for proprietary platforms Microsoft Windows and Mac OSX. Whereas open-source platforms (BSD, GNU/Linux etc.) were not officially addressed. It wasn't until the efforts of open-source projects like [Bumblebee](https://github.com/Bumblebee-Project/Bumblebee "Bumblebee Project's GitHub") and [Nvidia-Xrun](https://github.com/Witko/nvidia-xrun "Nvidia-Xrun's GitHub") that the *NIX users got to tweak their laptops for benefits of switchable graphics hardwares. Despite the amount of effort put in these projects, installation and configuration of these softwares via upstream repositories of different GNU/Linux distros is fragmented. Due to various factors (not an intended topic of this document), user-base for *NIX platforms has seen a dramatic rise in recent years. Also, gaming on GNU/Linux is on the rise. Not all users of *NIX platforms are power users and configuration for switchable graphics with upstream repos requires a certain level of knowledge and skill in Linux file system. Hence, one has to extensively search for the work-arounds proposed in online forums and blogs.
 
@@ -6,7 +6,7 @@ This document is the collection of all the tutorials and work-arounds proposed o
 
 ## Installation procedure
 
-Following steps assume a fresh install of any flavor of Ubuntu (preferably 16.04 LTS) but it should work for newer versions as well.
+Following steps assume a fresh installation of any flavor of Ubuntu (preferably 16.04 LTS) but it should work for newer versions as well.
 
 ### 1. Add repositories
    The latest Nvidia driver doesn't work with Bumblebee stable branch, therefore we need to add the testing branch and the proprietary driver ppa to system repos:
