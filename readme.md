@@ -6,7 +6,7 @@ This document is the collection of all the tutorials and work-arounds proposed o
 
 ## Installation procedure
 
-Following steps assume a fresh installation of any flavor of Ubuntu (preferably 16.04 LTS) but it should work for newer versions as well.
+Following steps assume a fresh installation of any flavor of Ubuntu (preferably 16.04 LTS) but it should work for newer versions as well. Setup script `bumblebee_fix.sh` can be used after completing step 4 to fix config files in the system.
 
 ### 1. Add repositories
    The latest Nvidia driver doesn't work with Bumblebee stable branch, therefore we need to add the testing branch and the proprietary driver ppa to system repos:
@@ -29,6 +29,26 @@ Following steps assume a fresh installation of any flavor of Ubuntu (preferably 
   ```bash
   sudo apt-get install bumblebee-nvidia nvidia-384
   ```
+
+  From this point onward, you can **automate the process** by using `bumblebee_fix.sh` as superuser with Nvidia driver version number (384 in example) as argument:
+  ```bash
+  sudo ./bumblebee_fix.sh 384
+  ```
+  **or continue with remaining steps manually**.
+
+  What's **expected of you**:
+   - Added repos for graphics drivers and bumblebee
+   - nouveau driver removed completely
+   - Installed bumblebee-nvidia and nvidia-xxx
+
+  What this **script will do**:
+   - Blacklist nouveau driver
+   - Update bumblebee config
+   - Interactively set GL provider
+   - Disable gpu-manager
+   - Rebuild bbswitch and nvidia modules
+
+  In order to automate the process, clone this repo and run `bumblebee_fix.sh` as superuser from a terminal window.
 ### 5. Blacklist Nvidia driver
   Do not reboot until you have done this. Rebooting now will result in a black-screen and you'll have to enter through recovery mode to blacklist them. In fact, don't reboot unless it explicitly says to. Add following lines to ```/etc/modprobe.d/bumblebee.conf```:
   ```
