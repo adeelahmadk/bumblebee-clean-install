@@ -135,3 +135,7 @@ Following steps assume a fresh installation of any flavor of Ubuntu (preferably 
   ```
   sudo rm /etc/X11/xorg.conf
   ```
+  ### References
+  ##### 1. [Linux on Lenovo: Bumblebee on a Lenovo T440p [NVidia GT 730M] with XUbuntu/Ubuntu 16.04 LTS](https://lenovolinux.blogspot.jp/2016/05/bumblebee-on-lenovo-t440p-nvidia-gt.html "Linux on Lenovo")
+  ##### 2. [Archwiki: Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee "Arch Wiki")
+  ##### 3. [GitHub: Bumblebee-Project/Bumblebee Wiki](https://github.com/Bumblebee-Project/Bumblebee/wiki/Install-and-usage "Bumblebee Project")
