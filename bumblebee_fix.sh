@@ -2,12 +2,12 @@
 
 # #################################################
 # Script:       bumblebee_fix.sh                  #
-# Version:      0.1a				  		                #
-# Author:       codegenki		                      #
-# Date:         Jan 15, 2018				              #
+# Version:      0.1a                              #
+# Author:       codegenki                         #
+# Date:         Jan 15, 2018                      #
 # Usage:        bumblebee_fix <driver-number>     #
-# Description:  Bash script to patch bymblebee    #
-#               and nvidia driver           	    #
+# Description:  Bash script to patch bumblebee    #
+#               and nvidia driver                 #
 # Dependencies: bumblebee-nvidia nvidia-xxx       #
 # Platform:     Ubuntu (tested for Xenial x64)    #
 # #################################################
