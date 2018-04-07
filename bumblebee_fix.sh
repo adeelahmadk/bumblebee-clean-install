@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # #################################################
-# Script: 		  bumblebee_fix.sh       						#
-# Version:		  0.1a				  		                #
-# Author:		    codegenki		                      #
-# Date:			    Jan 15, 2018				              #
-# Usage:		    bumblebee_fix <driver-number>     #
-# Description: 	Bash script to patch bymblebee    #
+# Script:       bumblebee_fix.sh                  #
+# Version:      0.1a				  		                #
+# Author:       codegenki		                      #
+# Date:         Jan 15, 2018				              #
+# Usage:        bumblebee_fix <driver-number>     #
+# Description:  Bash script to patch bymblebee    #
 #               and nvidia driver           	    #
 # Dependencies: bumblebee-nvidia nvidia-xxx       #
-# Platform:     Ubuntu (test for Xenial x64)      #
+# Platform:     Ubuntu (tested for Xenial x64)    #
 # #################################################
 
 print_usage() {
@@ -62,7 +62,7 @@ else
   printf "${BLUE}%s${NORMAL}\n" "  - Update bumblebee config"
   printf "${BLUE}%s${NORMAL}\n" "  - Interactively set GL provider"
   printf "${BLUE}%s${NORMAL}\n" "  - Disable gpu-manager"
-  printf "${BLUE}%s${NORMAL}\n" "  - Rebuild bbswitch and nvidia modules"
+  printf "${BLUE}%s${NORMAL}\n" "  - Rebuild bbswitch and nvidia dkms modules"
   echo
   echo
 
